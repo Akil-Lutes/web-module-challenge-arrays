@@ -177,9 +177,9 @@ function filterByWord(arr, string){
     let newArr = [];
         for (let i = 0; i < arr.length; i++) {
           if (arr[i].includes(string)) {
-            return newArr.push(arr[i].includes(string));
+            newArr.push(arr[i]);
           }
-        }
+        } return newArr;
     }
     
     console.log(filterByWord(originalFlavors, 'Chocolate'));
